@@ -86,6 +86,7 @@ celerybeat.pid
 *.sage.py
 
 .venv/
+.env/
 
 data/processed/
 
