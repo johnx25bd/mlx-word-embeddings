@@ -26,7 +26,7 @@ def parse_args():
     parser.add_argument("--learning-rate", type=float, default=0.001, help="Learning rate")
     parser.add_argument("--seq-length", type=int, default=20, help="Length to which sequences will be padded")
     parser.add_argument("--window", type=int, default=1000, help="Length to which sequences will be padded")
-    parser.add_argument("--w2v-path", type=str, default="./w2v_epoch_11.pth", help="Length to which sequences will be padded")
+    parser.add_argument("--w2v-path", type=str, default="./ft_w2v_epoch_70.pth", help="Length to which sequences will be padded")
     parser.add_argument("--iterations", type=int, default=2, help="Device to train on") # -1 for all data
     parser.add_argument("--data-src", type=str, default="parquet", help="Path to the data")
     return parser.parse_args()

@@ -6,10 +6,12 @@ __pycache__/
 # Sensitive
 .env
 
+
 # Data
 text8
 *.parquet
 model/params/*.pth
+*.pth
 
 # Logs
 wandb/

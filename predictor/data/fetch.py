@@ -3,6 +3,8 @@ import collections
 import pickle
 import os
 import sys
+import pandas as pd
+from data.preprocess import preprocess
 
 # Set the base directory for locating resources
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
@@ -31,7 +33,6 @@ vocab_to_int, int_to_vocab = load_lookups()
 #   int_to_vocab[0] = '<PAD>'
 #   vocab_to_int = {word: ii for ii, word in int_to_vocab.items()}
 #   return vocab_to_int, int_to_vocab
-
 
 def fetch(i, window=10, connection=None):    
     # Connect to PostgreSQL database
